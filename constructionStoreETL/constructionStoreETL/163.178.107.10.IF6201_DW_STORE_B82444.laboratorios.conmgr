@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="163.178.107.10.IF6201_DW_STORE_B82444.laboratorios"
+  DTS:DTSID="{5F45F93E-BEDD-4D87-8068-37424789B568}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=163.178.107.10;User ID=laboratorios;Initial Catalog=IF6201_DW_STORE_B82444;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABRDf/1NlgEGUgJIZiwcNgAAAAAACAAAAAAAQZgAAAAEAACAAAABw97a4mHWsK+8q8QHwKmjuTrW06nzccp+S6XrZthMODAAAAAAOgAAAAAIAACAAAACOFU2xqlTInhmkGtXnvizREsK3l95OT2lYOjzKz3OWXYAAAABzr9OicCbpP22suw5ez/5s6fMGsZcBryTD9r8WPN12js/ugyLNQnnwVAyzol8jPih/tR/zXyH2ae/aBnDzw1UxBzyZjAXfQpcg7Y3Gre6lOQdAIVxlMkpGtGM+ATkyfvKSZJPUriMHdg2BnYEU3uosq82qWTzWxGzMFtPtlKtpqUAAAACCknuJw+9/fZ4bIlrkYGN5QFYMbfhVvWzFUB9FZVLlGEtKr2XGK03BQNTKCfCLoxwTgvpg/kn9XwB7WITSwTAw</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

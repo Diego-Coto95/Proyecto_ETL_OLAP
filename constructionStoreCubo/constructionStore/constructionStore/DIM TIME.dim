@@ -1,0 +1,156 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a7b64eb5-2b93-4ea6-bf01-513c44548bee" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM TIME</ID>
+  <Name>DIM TIME</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="063c5c06-ec5e-4c83-8a93-644ec2f5b635">
+    <DataSourceViewID>AlmacenDatosView</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="7dc1549d-5c5f-4b42-a7e3-b21bc163e57c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="68530f2c-84f1-4226-87b5-2d68f5cbd086">
+      <ID>ID TIME</ID>
+      <Name>ID TIME</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d80bc383-d77e-4e4e-92d7-583a110f0351">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35c826cc-41fd-441f-b968-7874df4e1062">
+            <TableID>DW_DIM_TIME</TableID>
+            <ColumnID>ID_TIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e477c94f-91cf-4036-ad9c-1c4f4da4be33">
+          <AttributeID>BILL DATE</AttributeID>
+          <Name>BILL DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd673356-6d4c-49d7-ad99-805c77f7b809">
+          <AttributeID>ANNO SALE</AttributeID>
+          <Name>ANNO SALE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5574c10a-478f-420f-b6ae-902dbeff6e3d">
+          <AttributeID>MONTH SALE</AttributeID>
+          <Name>MONTH SALE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c3dce6c0-3dbd-4ae7-b00d-be3675414ce9">
+          <AttributeID>DAY SALE</AttributeID>
+          <Name>DAY SALE</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eab5eb43-e5e4-4e08-b81f-9eb6660359b1">
+      <ID>BILL DATE</ID>
+      <Name>BILL DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e72ddc76-9d9f-4e54-9822-35d01cc0429d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7510e74-be6e-4d45-b7ff-fcb2e176ce47">
+            <TableID>DW_DIM_TIME</TableID>
+            <ColumnID>BILL_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="11f85aa8-ee8d-4413-818c-77ccf81c7643">
+      <ID>ANNO SALE</ID>
+      <Name>ANNO SALE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f65cf654-90fb-4020-8a0a-b02ce620aef9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81262085-d230-4957-acd1-80649ac83d10">
+            <TableID>DW_DIM_TIME</TableID>
+            <ColumnID>ANNO_SALE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b161bad2-cab5-45ca-bb0b-78932cc7ed6c">
+      <ID>MONTH SALE</ID>
+      <Name>MONTH SALE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6be6f4ee-b824-461c-9af9-2b639009538e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa3b3db4-7cfa-4aa7-bc24-5b83c0b7b392">
+            <TableID>DW_DIM_TIME</TableID>
+            <ColumnID>MONTH_SALE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cae3ff4-532e-447b-b278-8ffac93a194d">
+      <ID>DAY SALE</ID>
+      <Name>DAY SALE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e2d657e-eb8b-4553-8108-f966c7e1b98f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="838a06bd-ec6b-4d0a-8ea0-bb23edd3c19c">
+            <TableID>DW_DIM_TIME</TableID>
+            <ColumnID>DAY_SALE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
